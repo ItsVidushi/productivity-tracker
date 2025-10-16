@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Monthly Productivity Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Monthly Productivity Tracker</h1>
+
+    <section class="input-card">
+      <h2>Enter today's scores</h2>
+      <label for="entry-date">Date</label>
+      <input type="date" id="entry-date" />
+
+      <div id="tasks-grid">
+        <!-- JS will insert 10 task rows here -->
+      </div>
+
+      <div class="controls">
+        <button id="save-btn">Save Entry</button>
+        <button id="clear-form-btn">Clear</button>
+      </div>
+
+      <div class="export">
+        <button id="export-csv">Export CSV</button>
+        <input type="file" id="import-file" accept=".csv" />
+        <button id="import-csv">Import Selected CSV</button>
+        <button id="reset-all">Reset All Data</button>
+      </div>
+
+      <p id="status" class="status"></p>
+    </section>
+
+    <section class="chart-card">
+      <h2>Productivity Chart</h2>
+      <canvas id="prodChart" height="120"></canvas>
+    </section>
+
+    <section class="table-card">
+      <h2>Saved Entries</h2>
+      <table id="entries-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Score (out of 100)</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
