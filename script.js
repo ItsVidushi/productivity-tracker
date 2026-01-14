@@ -22,7 +22,7 @@ function saveEntries(list) {
 const tasksGrid = document.getElementById('tasks-grid');
 // ---- CUSTOMIZE YOUR TASK NAMES HERE ----
 const TASK_NAMES = [
-  "20k Steps",
+  "10k Steps",
   "100g of Protein",
   "3l of Water",
   "DSA Practice",
