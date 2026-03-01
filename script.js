@@ -26,7 +26,7 @@ const TASK_NAMES = [
   "100g of Protein",
   "3l of Water",
   "DSA Practice",
-  "Tech Study",
+  "Study",
   "Content Creation",
   "Read Book",
   "Workout",
